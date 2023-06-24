@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inheritance</title>
+</head>
+<body>
+    <script>
+
+        // BSUPP
+        // BASE/SUPER/PARENT
+
+        class Shape{
+            constructor(color,noOfSide){
+            this.color = "color";
+            // this.color = "red"; not override if we initialized in parent class
+
+            this.noOfSide = noOfSide;
+            // this.noOfSide = 4; not override if we initialized in parent class
+        
+        }
+            draw(){
+            console.log("this is draw");
+            }
+        }
+
+
+
+        // DSUBC
+        // DERIVED/SUB/CHILD
+        // super is used to initialize parent class
+
+        class Circle extends Shape {
+            constructor(radius,side){
+                super("pink","infiity")
+                this.radius = radius;
+                this.side = side;
+                // this.noOfSide = side; // overide the noOfSide
+
+            }
+            draw(){
+            console.log("this is draw");
+            }
+        }
+        let myCircle = new Circle(3,9);
+        console.log(myCircle);
+
+
+        //  to check created pbject is inherited or not with the class
+        //  (linked or not)
+        console.log("true becoz its linked :", myCircle instanceof Circle); // true becoz its linked 
+        console.log("true becoz its linked:", myCircle instanceof Shape);  // true becoz its linked 
+
+
+        // _____________________________________________
+
+        class Rectangle extends Shape {
+            constructor(length,breadth){
+                super("yellow",5)
+                this.length = length;
+                this.breadth = breadth;
+
+        }
+        }
+
+        let myRectangle = new Rectangle(2,4)
+        console.log(myRectangle);
+
+
+        
+
+    </script>
+</body>
+</html>

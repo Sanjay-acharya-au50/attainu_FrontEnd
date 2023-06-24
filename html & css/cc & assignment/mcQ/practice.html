@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice mcQ</title>
+</head>
+<body>
+
+    <input type="radio" class="cl" name="s" id="a" value="a"><br>
+    <input type="radio" class="cl" name="s" id="b" value="b">
+    <h1 id="h"></h1>
+    <p id="p"></p>
+
+
+        <ul id="ul">
+            <li></li>
+            <li></li>
+        </ul>
+
+        <input type="radio" name="" class="rad"> 
+        <label for="rad">one</label>
+
+    <script>
+        console.log("hello world");
+
+        let obj = [{
+            "a" : "hello world << Heading >>",
+            "b" : "world {paragraph}"
+        },
+            {
+                "c" : "ddddddddd",
+                "e" : "fffffffff"
+            }]
+        console.log(obj[0]["a"]);
+        let a = "san"
+
+
+        let index = 0;
+        let data = obj[index];
+        console.log(data);
+
+        document.getElementById("h").innerText = obj[0]["a"];
+        document.getElementById("p").innerText = obj[0]["b"];
+        document.getElementById("ul").innerHTML = `  <ul id="ul">
+                                                 <li>${obj[0]["a"]}</li>
+                                                 <li>${obj[0]["b"]}</li>
+                                             </ul>`
+
+
+
+                                            let op =  document.querySelectorAll(".cl");
+                                            op[0].nextElementSibling.innerText = obj[0]["a"]
+
+
+            let quer = document.querySelectorAll(".rad");
+            quer[0].nextElementSibling.innerText = obj[0]["a"]
+
+            // console.log(quer);
+
+            // quer[0].nextElementSibling.innerText = obj[0]["a"];
+    </script>
+</body>
+</html>

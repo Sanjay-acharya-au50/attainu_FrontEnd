@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stack</title>
+</head>
+<body>
+    <script>
+        console.log("hello world");
+
+
+class Stack {
+    constructor(){
+        this.stack_ = [];
+    }
+
+    push(value){
+        this.stack_.push(value)
+    }
+    pop(){
+        if(this.stack_.length == 0){
+            throw new Error("THIS STACK IS EMPTY");
+        }
+        return this.stack_.pop();
+    }
+    peak(){
+        if(this.stack_[this.stack_.length == 0]){
+            throw new Error("THIS STACK IS EMPTY");
+        }
+        return this.stack_[this.stack_.length-1]
+    }
+    get isEmpty(){
+        return this.stack_.length;
+    }
+}
+
+let myStack = new Stack();
+myStack.push(1)
+console.log(myStack.pop());
+console.log(myStack.peak());
+console.log(myStack.pop());
+console.log(myStack);
+console.log(myStack.isEmpty)
+myStack.push(2)
+myStack.push(3)
+myStack.push(4)
+
+
+    </script>
+</body>
+</html>

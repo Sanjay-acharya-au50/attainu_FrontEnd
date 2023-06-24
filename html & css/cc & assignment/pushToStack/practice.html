@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice my push pull</title>
+</head>
+
+<body>
+    <style>
+        body {
+            margin: 0;
+            bottom: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .box {
+            margin-top: 260px;
+            height: 300px;
+            width: 500px;
+            background-color: aliceblue;
+            /* display: flex;
+           justify-content: center;
+           align-items: center; */
+        }
+        h1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'robot' , sans-serif;
+
+        }
+        #stack {
+            height: 30px;
+            width: 400px;
+            margin-top: 10px;
+            transition: 0.6s;
+
+        }
+        #stack:focus{
+            box-shadow: 0 0 2px 2px salmon;
+
+        }
+        .form{
+            display: flex;
+            /* align-items: center; */
+            justify-content: center;
+            flex-wrap: wrap;
+            font-size: 25px;
+            font-family: 'robot' , sans-serif;
+        }
+
+        .button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            
+            
+        }
+        .one{
+            margin: 10px;
+            transition: 0.4s;
+            padding: 5px;
+            font-family: fantasy;
+            
+        }
+        .one:hover{
+            box-shadow: 0 0 2px 2px salmon;
+        }
+        .two{
+            margin: 10px;
+            transition: 0.4s;
+            padding: 5px;
+            font-family: fantasy;
+
+
+
+        }
+        .two:hover{
+            box-shadow: 0 0 2px 2px salmon;
+        }
+        .three{
+            margin: 10px;
+            transition: 0.4s;
+            padding: 5px;
+            font-family: fantasy;
+
+
+
+        }
+        .three:focus{
+            box-shadow: 0 0 2px 2px salmon;
+        }
+      
+
+    </style>
+
+
+    <div class="container">
+        <div class="box">
+
+            <h1>Push-Pull Stack</h1>
+
+            <div class="form">
+                <label for="stack"> Enter here to push ! </label> <br>
+                <input type="text" name="san" id="stack">
+            </div>
+
+            <div class="button"> 
+
+                <button class="one" type="button" onclick="myPush()">Push!</button>
+                <button class="two"  type="button" onclick="myPop()">Pop()</button>
+                <button class="three"  type="button" onclick="myClear()">RESET</button>
+
+
+            </div>
+
+            <p id="printMyAns"></p>
+           
+
+        </div>
+    </div>
+
+
+<script>
+
+
+        var myEnterdValue = document.getElementById("stack");
+        // var ans = document.getElementsByClassName("printMyAns")
+
+
+        var myArr = [];
+        function myPush(){
+        myArr.push(myEnterdValue.value);
+        myEnterdValue.value = [];
+        printMyAns.innerText = myArr;
+        myEnterdValue.focus();
+        }
+
+        function myPop(){
+            myArr.pop();
+            printMyAns.innerText = myArr;
+        }
+
+        function myClear(){
+            myArr = [];
+            printMyAns.innerText = myArr;
+        }
+
+    </script> 
+
+</body>
+
+</html>

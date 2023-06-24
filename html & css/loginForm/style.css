@@ -1,0 +1,64 @@
+
+body {
+    font-family: sans-serif;
+    background-color: mediumspringgreen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 99vw;
+    height: 95vh;
+}
+.box {
+    background-color: #303030;
+    width: 320px;
+    height: 340px;
+    border-radius: 20px;
+}
+.heading {
+    font-size: 24px;
+    text-align: center;
+    color: whitesmoke;
+    margin-bottom: 30px;
+}
+.user, .pass, .sub {
+    width: 100%;
+    height: 90px;
+    text-align: center;
+}
+label {
+    float: left;
+    color: whitesmoke;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-left: 40px;
+}
+#username, #password {
+    width: 240px;
+    height: 18px;
+    background: #666666;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    padding: 10px;
+    color: whitesmoke;
+    font-size: 14px;
+    margin-top: 5px;
+}
+#username::placeholder,
+#password::placeholder {
+    color: mediumspringgreen;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+#submit {
+    width: 140px;
+    height: 38px;
+    border-radius: 7px;
+    color: whitesmoke;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+    background-color: tomato;
+}

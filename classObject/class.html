@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class</title>
+</head>
+<body>
+
+    <script>
+
+class demo{
+    constructor(one_value){
+        this.one_property = one_value
+    }
+}
+
+
+        // type of Circle is --> function
+        // everything function is a object bt thr is heirachy it
+        // is based on constructor function
+        //  class is derived from constructor function
+        // its a syntactical sugar
+
+
+
+        // byDefault class is not hoisted
+        // class declaration n expression in case we cant create another class before initialization 
+
+        // class declaration
+
+        // let obj = new Circle(5);  / reference error
+        // console.log(obj);
+
+        class Circle{
+            constructor(radius){
+                this.rad = radius;
+                this.draw = function(){
+                    // console.log("this is a draw"); // normal circle function
+                    console.log(this); // line 100
+
+                }
+            }
+        }
+    
+
+        // creating object from class
+        let obj = new Circle(5);
+        console.log(obj);
+
+        // class expression
+
+        // let st1 = new Student("san")  / reference error
+        // console.log(st1);
+
+
+        let Student = class{
+            constructor(name){
+                this.name = name;
+            }
+        }
+
+        let st1 = new Student("san")
+        console.log(st1);
+
+
+        console.log(typeof Circle);
+        // console.log(Circle.name);
+
+
+        // factory function wont work in class
+        // let factoryFunObj = Circle(5)
+
+        // there r two type to define function
+
+        // 1. function declaration // are hoisted
+        //  before defining the function we can call in function declaration
+
+        foo()
+        function foo (){
+            console.log("this is function declaration");
+        };
+
+        // 2. function expression
+
+        // we cant call before initialization
+        let foo1 = function (){
+            console.log("this is a function expression");
+        };
+        foo1()
+
+
+        
+
+    </script>
+    
+</body>
+</html>

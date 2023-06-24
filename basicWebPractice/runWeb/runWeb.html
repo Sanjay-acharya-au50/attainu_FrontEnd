@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web page</title>
+</head>
+<style>
+    /* @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap'); */
+
+    body {
+        margin: 0;
+        bottom: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        /* font-family: 'Aboreto', cursive; */
+
+
+    }
+
+    .container .right {
+        display: flex;
+        width: 100%;
+
+
+    }
+
+    .head {
+        width: 100%;
+        background-color: rgb(46, 49, 49);
+        display: flex;
+        align-items: center
+    }
+
+    .left ul {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: center;
+        list-style: none;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    ul li {
+        margin-right: 10px;
+        color: rgb(130, 135, 140);
+        transition: 0.6s;
+    }
+
+    ul li:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+        color: aqua;
+    }
+
+    span {
+        margin-right: 20px;
+        color: rgb(130, 135, 140);
+
+    }
+
+    .r {
+
+        width: 100%;
+        /* height: 130px; */
+        display: flex;
+        justify-content: flex-end;
+        margin: 10px;
+        padding: 10px;
+    }
+
+
+    #mr {
+        margin-right: 10px;
+        transition: 0.6s;
+        border: none;
+
+    }
+
+    #mr:focus {
+        transform: scale(1.06, 1.06);
+        border-color: black;
+    }
+
+    button {
+        margin-right: 10px;
+        height: 30px;
+        border: none;
+        border-radius: 5px;
+        transition: 0.6s;
+    }
+
+    button:hover {
+        transform: scale(1.1, 1.1);
+    }
+    .run{
+        background-image: url("Technology-Dekstop-Wallpapers.jpg");
+        height: 300px;
+        width: 100%;
+    }
+
+    marquee {
+        margin-top: -15px;
+        background-color: rgb(39, 34, 34);
+        color: aqua;
+    }
+
+    .img {
+
+        width: 100%;
+        background-color: rgb(39, 34, 34);
+
+        /* height: 100%; */
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-items: center;
+        justify-content: center;
+        /* margin: -5px; */
+        margin-top: -4px;
+    }
+
+    .imgClass {
+        height: 300px;
+        margin: 30px;
+        width: 400px;
+        border-radius: 10px;
+        transition: 0.6s;
+
+    }
+
+    .imgClass:hover {
+        transform: scale(1.1, 1.1);
+    }
+
+    .content {
+        margin: 0;
+        padding: 0;
+        height: 1200px;
+        width: 100%;
+        background-color: rgb(39, 34, 34);
+
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: left;
+    }
+
+    .person {
+        margin: 30px;
+        margin-top: 60px;
+        height: 300px;
+        width: 400px;
+        background-color: rgb(39, 34, 34);
+        color: rgb(138, 155, 169);
+        display: grid;
+        justify-content: center;
+        grid-template-columns: auto;
+        align-items: center;
+        text-align: center;
+
+
+    }
+
+    .person img {
+        height: 200px;
+        width: 300px;
+        border-radius: 10px;
+
+
+    }
+
+    .personDescription {
+        margin-left: 30px;
+        margin-top: 60px;
+        border-radius: 10px;
+        height: 230px;
+        width: 830px;
+        background-color: rgb(65, 46, 46);
+        color: rgb(138, 155, 169);
+        text-align: start;
+        padding: 30px;
+
+    }
+    .personDescription button{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    .myBtn{
+        display: flex;
+        justify-content: center;
+    }
+    .registerBox{
+        background-color: rgb(187, 222, 249);
+        height: 100px;
+        width: 1440;
+/* width: 100%; */
+        /* margin-top: -21px; */
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+    
+    }
+    .register{
+        height: 100px;
+        width:100%;
+        background-color: rgb(187, 240, 14);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bolder;
+        font-size: 25px;
+    }
+    .register button{
+        color: blue;
+        margin-left: 20px;
+        height: 40px;
+        width: 100px;
+        font-size: large;
+        
+    }
+    footer{
+        height: 50px;
+        width: 1440;
+        padding: 20px;
+        background-color: rgb(187, 222, 249);
+        text-align: center;
+
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="head">
+
+            <div class="left">
+                <ul>
+                    <span>SAN.in</span>
+                    <li>home</li>
+                    <li>browse</li>
+                    <li>contact</li>
+                    <li>about</li>
+                </ul>
+            </div>
+
+            <div class="right">
+                <div class="r">
+                    <input type="text" name="" id="mr" placeholder="search">
+                    <label for="mr"><button>search</button></label>
+                    <button>signUp</button>
+                    <button>login</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="run">
+
+            <marquee>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quae excepturi sed maiores, </p>
+            </marquee>
+        </div>
+
+        <div class="img">
+            <img class="imgClass" src="./th (1).jpeg" alt="">
+            <img class="imgClass" src="./tech2.jpg" alt="">
+            <img class="imgClass" src="./tech3.jpg" alt="">
+
+            <img class="imgClass" src="./tech2.jpg" alt="">
+            <img class="imgClass" src="./th (1).jpeg" alt="">
+            <img class="imgClass" src="./tech3.jpg" alt="">
+
+            <img class="imgClass" src="./tech3.jpg" alt="">
+            <img class="imgClass" src="./tech2.jpg" alt="">
+            <img class="imgClass" src="./th (1).jpeg" alt="">
+
+        </div>
+
+    </div>
+
+
+    <div class="content">
+
+        <div class="person">
+            <img src="./person1.jpg" alt=""><br>
+
+            <p>master in computer science</p>
+        </div>
+        <div class="personDescription">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Laudantium facere pariatur adipisci.
+                Molestiae corrupti fuga quis accusamus perspiciatis
+                eos non?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla 
+                dignissimos impedit mollitia qui et?
+                Nobis, ratione? Minus quas deserunt aliquam.
+                Lorem ipsum, dolor sit amet consectetur adipisicing 
+                elit. Praesentium a dolore nemo enim distinctio id, 
+                nesciunt provident officiis inventore eius eaque quo 
+                dicta aliquam 
+                assumenda laborum quibusdam alias tempora? Assumenda!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit porro debitis tempora 
+                praesentium asperiores molestiae eaque alias at sit eius?
+            </p>
+            <div class="myBtn">
+            <button>join Master Class</button>
+        </div>
+        </div>
+
+
+        <div class="person">
+            <img src="./person2.jpg" alt="">
+            <p>master in M.Tech</p>
+        </div>
+
+        <div class="personDescription">
+               <p>Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Laudantium facere pariatur adipisci.
+                Molestiae corrupti fuga quis accusamus perspiciatis
+                eos non?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla 
+                dignissimos impedit mollitia qui et?
+                Nobis, ratione? Minus quas deserunt aliquam.
+                Lorem ipsum, dolor sit amet consectetur adipisicing 
+                elit. Praesentium a dolore nemo enim distinctio id, 
+                nesciunt provident officiis inventore eius eaque quo 
+                dicta aliquam 
+                assumenda laborum quibusdam alias tempora? Assumenda!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit porro debitis tempora 
+                praesentium asperiores molestiae eaque alias at sit eius?
+            </p>
+            <div class="myBtn">
+
+            <button>join Master Class</button>
+        </div>
+
+        </div>
+
+
+        <div class="person">
+            <img src="./person3.jpg" alt="">
+            <p>master in Coding</p>
+        </div>
+
+        <div class="personDescription">
+               <p>Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Laudantium facere pariatur adipisci.
+                Molestiae corrupti fuga quis accusamus perspiciatis
+                eos non?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla 
+                dignissimos impedit mollitia qui et?
+                Nobis, ratione? Minus quas deserunt aliquam.
+                Lorem ipsum, dolor sit amet consectetur adipisicing 
+                elit. Praesentium a dolore nemo enim distinctio id, 
+                nesciunt provident officiis inventore eius eaque quo 
+                dicta aliquam 
+                assumenda laborum quibusdam alias tempora? Assumenda!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit porro debitis tempora 
+                praesentium asperiores molestiae eaque alias at sit eius?
+            </p>
+            <div class="myBtn">
+            
+            <button>join Master Class</button>
+        </div>
+
+        </div>
+
+
+    </div>
+
+
+    
+
+    <div class="registerBox">
+    <div class="register">
+        <p>Free Live Master Classes for Online Courses with Job Guarantee</p>
+        <button>call back</button>
+    </div>
+</div>
+
+    <!-- <div class="c">
+        <div class="s"></div>
+        <div class="r">
+
+        <div class="a"></div>
+    </div>
+        
+    </div> -->
+    <footer>
+        <p>Copyright © 2020, LeetU Education Pvt. Ltd.</p>
+    </footer>
+
+
+</body>
+
+</html>

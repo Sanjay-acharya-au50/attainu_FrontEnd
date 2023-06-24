@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promise 3</title>
+</head>
+
+<body>
+
+
+
+    <script>
+
+
+function foo(){
+let san = new Promise ((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve("promise has resolved")
+    },1000)
+
+    
+})
+return san;
+}
+foo().then((data)=>console.log(data));
+
+
+let myPromise = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve(('its resolved'))
+    },1000)
+}).then((v)=>console.log(v))
+
+
+
+
+    function man (){
+        let trust = new Promise ((suc,rej)=>{
+            setTimeout(()=>{
+                rej('rejected')
+            },1500)
+        })
+        return trust;
+    }
+    man().then((d)=>console.log(d))
+
+
+
+    let mySuc = new Promise ((success, rejection)=>{
+        setTimeout(()=>{
+            rejection('sorryy bro!')
+        },1000)
+    }).then((data)=>{
+        console.log(data)
+    })
+
+
+    </script>
+</body>
+
+</html>

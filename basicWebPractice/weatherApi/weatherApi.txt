@@ -1,0 +1,27 @@
+
+
+
+cloud_pct
+feels_like
+humidity
+max_temp
+min_temp
+sunrise
+sunset
+temp
+wind_degrees
+wind_speed
+
+------------------
+------------------
+
+  cloud_pct.innerText = response.cloud_pct
+  temp.innerText = response.temp
+  feels_like.innerText = response.feels_like
+  humidity.innerText = response.humidity
+  min_temp.innerText = response.min_temp
+  max_temp.innerText = response.max_temp
+  wind_speed.innerText = response.wind_speed
+  wind_degrees.innerText = response.wind_degrees
+  sunrise.innerText = response.sunrise
+  sunset.innerText = response.sunset

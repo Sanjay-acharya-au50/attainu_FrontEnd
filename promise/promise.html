@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promise</title>
+</head>
+<body>
+        <div class="container">
+
+        </div>
+        <script>
+            async function san(){
+                let weather = new Promise((resolve,reject)=>{
+                    setTimeout(()=>{
+                            console.log("5 deg")
+                    },2000)
+                })
+                
+
+                let temp = new Promise((resolve,reject)=>{
+                            setTimeout(()=>{
+                    resolve(true)
+                    console.log("1000")
+                },1000)
+                })
+
+
+                    let x = await weather;
+                    let y = await temp;
+
+             
+
+            }
+            san();
+            // .then((value)=>console.log(value))
+
+
+
+        </script>
+</body>
+</html>

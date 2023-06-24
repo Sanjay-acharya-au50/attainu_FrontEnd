@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>module</title>
+</head>
+<body>
+    
+
+    <script>
+      
+// -----------------------------------------------------------------------
+
+        class Rectangle{
+            constructor(length){
+                this.length = length;
+
+            }
+
+            // instance method [ behaves like normal function ]
+            demo(){
+                console.log("this is a demo")
+            }
+            // static method
+            static myStatic(height){
+                return new Rectangle(height)
+            }
+        }
+
+        // instance method 
+        // we need to create an object by using (new)---> Keyword to make call
+        let myObj = new Rectangle(89);
+        console.log(myObj);
+
+
+        // static method call
+        // without creating the new object calling the class
+        //  in static method we use class name to make a call;
+        console.log(Rectangle.myStatic(90))
+
+// -----------------------------------------------------------------------
+
+        // example
+        class Math{
+            // static method
+            static abs(){
+
+            }
+        }
+
+
+// -----------------------------------------------------------------------
+
+
+
+
+
+class Circle {
+            constructor(radius){
+                this.radius_ = radius;
+            }
+            // instance method
+            draw (){
+                console.log("this is draw")
+            }
+            // static is a keyword
+            // static method can only call by class name, we dont need to create object to call
+            static parse(str){
+                let radius = JSON.parse(str).radius;
+                return new Circle(radius);
+                // console.log("this is a static method",str);
+            }
+
+            // static method
+            static create(radius){
+                return new Circle(radius);
+            }
+        }
+
+        let c = new Circle(1)
+        console.log(c);
+
+        c.draw();
+        p = Circle.parse(8);
+        console.log(p);
+        c1 = Circle.create(3);
+        console.log(c1);
+
+
+</script>
+
+</body>
+</html>

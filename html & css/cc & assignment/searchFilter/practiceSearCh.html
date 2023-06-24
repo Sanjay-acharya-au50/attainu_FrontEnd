@@ -1,0 +1,131 @@
+
+
+<!-- different Approach -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+</head>
+
+<body>
+    <style>
+        li {
+            list-style: none;
+        }
+    </style>
+
+    <div class="container">
+
+        <input type="text" name="" id="search" placeholder="enter" onkeyup="fun()">
+
+
+        <ul id="ul">
+            <li>san</li>
+            <li>man</li>
+            <li>ban</li>
+            <li>lan</li>
+            <li>dan</li>
+        </ul>
+
+        <p id="id">foo</p>
+
+    </div>
+
+    <script>
+
+        // --------------------------------------------------
+        //  counting list
+        // function countLi() {
+        //     let count = 0;
+        //     for (let i = 0; i < li.length; i++) {
+        //         let ul = document.getElementById("ul");
+        //         let li = ul.getElementsByTagName("li");
+        //         console.log(li[i].innerText);
+        //         count++
+        //     }
+        //     console.log(count);
+        // }
+
+        // countLi()
+
+        // --------------------------------------------------
+
+    
+
+        let ul = document.getElementById("ul");
+            // console.log(ul);
+            let li = ul.getElementsByTagName("li");
+            console.log(" li[3]",li[3].textContent);
+
+
+
+
+        function fun1() {
+            
+            let search = document.getElementById("search");
+            // console.log(search);
+            
+            let id = document.getElementById("id");
+            // console.log(id.innerText);
+            
+            let ul = document.getElementById("ul");
+            // console.log(ul);
+            let li = ul.getElementsByTagName("li");
+            // console.log(li[3].textContent);
+            
+            let fil = search.value.toUpperCase();
+            for(let i=0; i<li.length; i++){
+
+                console.log(li[i].innerText);
+            }
+        }
+        fun1();
+
+
+
+
+
+
+
+        function fun (){
+             
+            let search = document.getElementById("search");
+            // console.log(search);
+            let fill = search.value.toUpperCase()
+            
+            let id = document.getElementById("id");
+            // console.log(id.innerText);
+            
+            let ul = document.getElementById("ul");
+            // console.log(ul);
+            let li = ul.getElementsByTagName("li");
+            // console.log(" li[3]",li[3].textContent);
+            for(let i=0; i<li.length; i++){
+
+                let a = li[i].textContent;
+
+                text = a.toUpperCase() || a.innerText;
+
+                if(text.toUpperCase().indexOf(fill) > -1){
+                    li[i].style.display = "";
+                }
+                else{
+                    li[i].style.display = "none"
+                }
+
+            }
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

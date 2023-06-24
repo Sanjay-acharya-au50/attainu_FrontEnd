@@ -1,0 +1,96 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="con">
+        <input type="text" name="" id="id" onkeyup="myFun()">
+        <ul id="loop">
+            <li><a href="#">san</a></li>
+            <li><a href="#">man</a></li>
+            <li><a href="#">ban</a></li>
+            <li><a href="#">dan</a></li>
+        </ul>
+    </div>
+    
+    <script>
+     
+
+        function myFun(){
+            // let id = document.getElementById("id");
+            let fil = id.value.toUpperCase();
+            let ul = document.getElementById("loop");
+            let li = ul.getElementsByTagName("li")
+
+
+
+            for(let i = 0; i<li.length; i++){
+                let a = li[i].getElementsByTagName("a")[0];
+                text = a.textContent || a.innerText
+                if( text.toUpperCase().indexOf(fil) > -1 ){
+                    li[i].style.display = ""
+                }
+                else {
+                    li[i].style.display = "none"
+                    
+                }
+            }
+
+        }
+
+
+    </script>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search filter</title>
+</head>
+<body>
+    
+    <div class="c">
+        <input type="text" name="" id="myId" onkeyup="foo()">
+        <ul id="myUl">
+            <li><a href="#">dude</a></li>
+            <li><a href="#">rude</a></li>
+            <li><a href="#">bude</a></li>
+            <li><a href="#">pude</a></li>
+
+        </ul>
+    </div>
+
+        <script>
+
+            function foo(){
+            let myId = document.getElementById("myId");
+            let filter = myId.value.toUpperCase();
+            let myUl = document.getElementById("myUl");
+            let li = myUl.getElementsByTagName("li");
+
+                for(let i =0; i<li.length; i++){
+
+                    let text = a.textContent || a.innerText
+
+
+                }
+
+            }
+        </script>
+</body>
+</html>

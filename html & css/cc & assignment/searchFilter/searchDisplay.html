@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search filter</title>
+</head>
+<body>
+    <style>
+        ul {
+            list-style: none;
+        }
+    </style>
+ <div class="container">
+        <input type="text" name="" id="search" placeholder="enter" onkeyup="fun()">
+        <ul id="myUl">
+            <li><a href="#">san</a> </li>
+            <li><a href="#">man</a> </li>
+            <li><a href="#">van</a> </li>
+            <li><a href="#">don</a> </li>
+            <li><a href="#">ban</a> </li>
+            <li><a href="#">can</a> </li>
+            <li><a href="#">ean</a> </li>
+            <li><a href="#">fon</a> </li>
+            <li><a href="#">son</a> </li>
+            <li><a href="#">han</a> </li>
+            <li><a href="#">ian</a> </li>
+            <li><a href="#">sun</a> </li>
+            <li><a href="#">kan</a> </li>
+            <li><a href="#">lan</a> </li>
+            <li><a href="#">nan</a> </li>
+            <li><a href="#">oon</a> </li>
+        </ul>
+    </div>
+
+
+    <script>
+
+
+ 
+
+
+        function fun (){
+
+            let myId = document.getElementById("search");
+            let filter = myId.value.toUpperCase();
+            let ul = document.getElementById("myUl")
+            let li = ul.getElementsByTagName("li")
+            // let data = myId.value;
+            // console.log(data);
+            for(let i = 0; i<li.length; i++ ){
+                let a = li[i].getElementsByTagName("a")[0];
+                let textV = a.textContent || a.innerText;
+                if(textV.toUpperCase().indexOf(filter) > -1){
+                        li[i].style.display = "";
+                    }
+                    else {
+                            li[i].style.display = "none";
+                
+                        }
+                
+                    }
+                }
+                
+                
+                
+                //             // let a = "san";
+                //             // console.log(a.indexOf("san"));
+
+
+
+
+
+                
+                </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON & json</title>
+</head>
+<body>
+    
+
+    <script>
+
+
+        //  this run in only web browser 
+        // copy this and paste in chrome inspect
+
+
+        //  to convert JSON to string
+        let JSONtoString = JSON.stringify({"name" : "san"})
+
+
+
+        // to convert string to json
+        let stringToJSON = JSON.parse(`{"name": "san"}`);
+
+        
+
+        JSON.parse() // is a synchronous function
+        .json() // is a Asynchronous function
+        // it returns a Promise, when we fetch a data from API, it has a lot of 
+        // meta data, the size of data, type of data, to parse data i used .json
+        //  we knw fetch is asynchronous process it returns promise which needs to be resolved.
+    </script>
+
+</body>
+</html>

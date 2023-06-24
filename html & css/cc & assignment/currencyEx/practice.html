@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice currEx</title>
+</head>
+<body>
+    <h1>List of currency price</h1>
+   
+     <!-- <table>
+        <thead>
+            <th>list</th>
+        </thead>
+        <tbody id="row">
+            <tr>
+                <td>x</td>
+
+
+            </tr>
+      
+        </tbody>
+    </table>  -->
+
+    <ul id="row">
+        <li ></li>
+    </ul>
+
+
+    
+    <script>
+        console.log('hello world');
+
+
+
+        fetch('https://v6.exchangerate-api.com/v6/d18fb2906f2918f9268a78d2/latest/USD')
+        .then(data=>data.json())
+        .then(value=>{
+            // console.log(value);
+            console.log(value.conversion_rates);
+            let arr = ""
+            for(items in value.conversion_rates){
+                arr+= `
+                         <ul id="row">
+                          <li >${items} : ${value.conversion_rates[items]}</li>
+                        </ul>`
+
+            }
+            document.getElementById('row').innerHTML = arr;
+
+            
+        })
+
+    
+
+
+    </script>
+</body>
+</html>

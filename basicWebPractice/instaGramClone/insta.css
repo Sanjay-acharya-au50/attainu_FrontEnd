@@ -1,0 +1,171 @@
+body{
+    margin: 0;
+    bottom: 0;
+    font-family: 'poppins', sans-serif;
+
+}
+.container .navBar{
+    width: 20%;
+    height: 800px;
+    /* background-color: aliceblue; */
+    border-right: 1px solid black;
+    position: fixed;
+}
+.navBar img {
+    height: 100px;
+    width: 200px;
+}
+.navBar ul li {
+    font-size: large;
+    list-style: none;
+    /* font-family: 'poppins', sans-serif; */
+    cursor: pointer;
+}
+
+.navBar ul li img{
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top: 8px;
+    margin-top: 30px;
+}
+#more img{
+    margin-top: 200px;
+    height: 23px;
+    width: 23px;
+}
+    #spn{
+    margin-left: 20px;
+}
+.profile{
+    /* margin: 20px; */
+    /* padding: 50px; */
+    padding-left: 150px;
+    padding-right: 10px;
+
+    height: 2000px;
+    width: 60%;
+    /* position: relative; */
+    /* background-color: rgb(197, 30, 30); */
+    display: inline-block;
+    margin-left: 20%;
+    cursor: pointer;
+    
+}
+
+
+.profilePhoto{
+    margin-top: 30px;
+  
+}
+.profilePhoto img{
+    
+    padding: 5px;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    border: 2px solid rgb(182, 151, 151);
+}
+.divName img{
+    height: 40px;
+    width: 40px;
+
+}
+.divName{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    margin: 30px;
+    margin-left: 70px;
+}
+.divName span{
+    font-size: 20px;
+}
+.headMargin{
+    margin: 10px;
+}
+.divName button{
+
+    height: 35px;
+    width: 100px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.profileHead{
+      /* display: grid;
+    grid-template-columns: auto auto; */
+    display: flex;
+
+}
+
+.countFollowers{
+    display: flex;
+    margin-top: -25px;
+    margin-left: 60px;
+}
+.countFollowers span{
+    margin: 20px;
+}
+.description p{
+    margin-left: 80px;
+    margin-top: 5px;
+}
+#dPara{
+    margin-top: -20px;
+}
+.highlights{
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+
+}
+/* not working */
+/* .highlights ::-webkit-scrollbar{
+    width: 0px;
+} */
+
+.highlights img{
+
+    flex-direction: row;
+    margin-right: 10px;
+    padding: 5px;
+    margin-top: 40px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid rgb(220, 198, 198);
+    border-radius: 50%;
+}
+hr{
+    margin-top: 40px;
+}
+.tagText{
+    text-align: center;
+    margin-top: 20px;
+}
+.tagText span{
+    margin: 10px;
+}
+#phto{
+    border-bottom: 1px solid #000;
+}
+.photoGallery{
+    margin-top: 20px;
+    margin-left: -25px;
+    height: 60px;
+    width: 60px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 40px;
+}
+.photoGallery img{
+    /* margin: 15px; */
+    height: 270px;
+    width: 270px;
+    border-radius: 6px;
+    transition: 0.6s;
+}
+.photoGallery img:hover{
+    transform: scale(1.1,1.1);
+}

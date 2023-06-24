@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    height: 600px;
+    width: 400px;
+    background-image: url(./lockscreen.jpg);
+    border: 45px solid rebeccapurple;
+    /* justify-content: center; */
+}
+#headr{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p{
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    font-size:x-large;
+}
+ul{
+
+    /* list-style: none; */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* flex-direction: row; */
+    color: orange;
+    font-size: 50px;
+    gap: 40px;
+    margin-left: 80px;
+}

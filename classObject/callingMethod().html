@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ----------------------------------
+        // both are same
+
+
+        function sqaure(h){
+            this.height= h
+            this.area = function area(){
+                console.log("i dnt knw");
+            }
+        }
+
+        // let newSqure =  new sqaure(5);
+        // console.log(newSquare);
+
+        // if we have multiple arguement ({},1,2,3)
+
+        obj = {};
+        sqaure.call(obj,5);
+        // sqaure.call(obj,5);
+        console.log(obj);
+
+
+
+        // if we have multiple arguement [1,2,3]
+        let obj2 = {}
+        sqaure.apply(obj2,[59])
+        console.log(obj2);
+
+// ----------------------------------------------------------
+        //  blind calling function
+        let myObj ={
+            firstName : "san",
+            lastName : "acharya"
+        }
+
+        function printFunction(address){
+        console.log(this.firstName,this.lastName,address)
+        }
+        console.log("call method:");
+        printFunction.call(myObj,"b.lore");
+
+        console.log("apply method:");
+        printFunction.apply(myObj,["delhi"])
+
+        console.log("blind method:");
+        let printMyBindFun = printFunction.bind(myObj,"karwar");
+        printMyBindFun();
+// ---------------------------------------------------
+
+        //  inetrview qstn
+
+        let myLife = {
+            name : "sanju",
+            bike : 'RS'
+        }
+
+        function myProfile(address){
+            return `${this.name} has ${this.bike} yellow bike ${address}`
+        }
+        console.log(myProfile.call(myLife," in karwar"))
+
+        // ________________________________________
+
+
+        // MCQ 1
+
+        let person ={
+            age : 23,
+            getAge:function(){
+                return this.age;
+            }
+        }
+        person2 = {age:56}
+        console.log(person.getAge.call(person2));
+
+        // MCQ 2
+
+        let anotherPerson = {
+            name : "san",
+            getName : function (message){
+              return  this.name + "is" + message;
+            }
+        }
+        let person0 = {name : "man"};
+        let p = anotherPerson.getName.apply(person0,["youtuber"])
+        console.log(p);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+}
+
+.container {
+    border: 3px solid black;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.san {
+    padding: 15px;
+
+}
+
+.man1{
+    order: 2;
+    background-color: red;
+}
+
+.man2{
+    background-color: blue;
+}
+
+.man3{
+    background-color: green;
+}
+
+.man4{
+    background-color: yellow;
+}
+
+.man5{
+    background-color: pink;
+}
+.man6{
+    background-color: lightblue;
+}
+
+.man7{
+    background-color: black;
+}
+
+.man8{
+    background-color: rebeccapurple;
+}
+
+.man9{
+    background-color: red;
+}

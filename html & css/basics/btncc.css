@@ -1,0 +1,28 @@
+.container{
+    margin: 50px;
+    border-left: 5px solid rgb(139, 139, 241);
+    border-top: 1px solid rgb(139, 139, 241);
+    border-bottom: 1px solid rgb(139, 139, 241);
+    border-right: 1px solid rgb(139, 139, 241);
+
+    padding: 20px;
+}
+.btn{
+    height: 35px;
+    margin-right: 10px;
+    width: 100px;
+
+}
+#id1{
+    
+    color: white;
+    background-color: lightblue;
+    border:lightblue;
+    border-radius: 7px;
+}
+#id2{
+    color: white;
+    background-color: green;
+    border:green;
+    border-radius: 7px;
+}

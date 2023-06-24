@@ -1,0 +1,34 @@
+.san {
+    margin: 20px;
+    background-color: orange;
+}
+
+.man {
+    background-color: red;
+    height: 500px;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-left: 450px;
+    margin-right: 450px;
+    margin-bottom: 20px;
+    padding-top: 200px;
+    text-align: center;
+
+}
+#anv {
+    text-align: center;
+}
+.op {
+    background-color: yellow;
+}
+
+.op {
+    width: 200px;
+    transition: width 2s;
+}
+
+.op:focus {
+    width: 400px;
+}

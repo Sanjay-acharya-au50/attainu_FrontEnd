@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>api data display</title>
+</head>
+<body>
+
+
+
+  <div class="container">
+
+    <form action=""></form>
+
+    <table>
+      <thead>
+        <tr>
+
+        <th>id</th>
+        <th>name</th>
+      </tr>
+
+
+      </thead>
+      <tbody id="list">
+
+        <tr>
+        <td>world</td>
+        <td>world</td>
+
+      </tr>
+    </tbody>
+
+    </table>
+
+    <!-- winner -->
+
+    <h1 id="winner">
+
+    </h1>
+
+  </div>
+
+
+
+
+
+  <!-- ------------------------------------------------------------ -->
+  <!-- <script>
+    console.log("hello world");
+
+    fetch("https://jsonplaceholder.typicode.com/users")
+    .then(data=>{
+      return data.json()
+    })
+    .then(v=>{
+      console.log(v[1].name)
+      let tableData = "";
+      
+        v.map(value=>{
+          tableData += `
+          <tbody class="list">
+
+            <tr>
+            <td>${value.id}</td>
+            <td>${value.name}</td>
+
+            </tr>
+          </tbody>
+          `
+        })
+
+
+
+        document.getElementById("list").innerHTML = tableData;
+
+        document.getElementById("winner").innerHTML = `<h1 id="winner">
+                                                          ${v[1].name}
+                                                        </h1>`;
+
+
+    }) 
+
+
+  </script> -->
+  <script>
+
+
+fetch("https://jsonplaceholder.typicode.com/users").then(data=>data.json())
+.then(v=>{
+  let store = "";
+
+  v.map(obj=>{
+      store+=`<tbody id="list">
+
+<tr>
+  <td>${obj.id}</td>
+<td>${obj.name}</td>
+
+</tr>
+</tbody>`
+  })
+  document.getElementById("list").innerHTML = store;
+})
+
+
+
+  </script>
+</body>
+</html>

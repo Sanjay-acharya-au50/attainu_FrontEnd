@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display enter</title>
+</head>
+<body>
+<div class="container">
+    <input type="text" name="" id="inp">
+    <button onclick="fun()">BUTTON</button>
+    <p id="display"></p>
+</div>
+
+<script>
+    let inp = document.getElementById("inp")
+    let show = document.getElementById("display")
+    // console.log(inp);
+    function fun (){
+        let data = inp.value
+        // console.log(data);
+        show.innerText = data;
+
+    }
+
+</script>
+</body>
+</html>

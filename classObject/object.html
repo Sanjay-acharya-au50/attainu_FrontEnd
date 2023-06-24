@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+
+<body>
+    <script>
+
+        let str = "hello"
+        let str1 = new String("hello")
+
+        console.log(str);
+        console.log(str1);
+
+        let num = 93;
+        let num1 = new Number(93)
+        console.log(num);
+        console.log(num1);
+
+        let x = true;
+        let y = new Boolean(true);
+        console.log(x);
+        console.log(y);
+        console.log("x == y : " , x == y);
+
+
+
+
+        // normal object create
+        let demoObj = {};
+        demoObj.name = "san"
+        console.log("demoObj:",demoObj);
+
+
+
+
+        //  factory function : a function which returns object
+
+        function circle(radius){
+            return {
+                rad : radius,
+                demo : function(){
+                    return "demo"
+                }
+
+            }
+        }
+        let obj = circle(5);
+        console.log(obj);
+        // to excicute draw function 
+        console.log(obj.demo());
+
+
+        function circle1(r){
+            this.radi = r;
+            this.drw = function(){
+                console.log("drw");
+            }
+        }
+        // new creates a empty object {radi : r, drw:()}
+        let obj1 = new circle1(3);
+        // let obj1 = circle1(3); <----------- new keyword not used
+
+
+        console.log(obj1);
+
+
+  
+
+        
+
+
+
+        // if i diddnt used (new) keyword provided parameter will assigned to window object,
+        // window variable is nothing but it pre exsisting inbuild in web browser object
+
+
+
+        /*
+        in javascript every function is an object
+        */
+
+
+        // important 
+        // every object has constructor property
+        // the function tht was used to create tht object
+
+
+        console.log(circle1.prototype);  //  <-- to show every object has constructor property
+        console.log(circle1.length);  // length of provided parameter
+
+
+
+        // to access the each value line by line;
+        let objLast = new sqaure(0)
+        console.log(Object.keys(objLast))
+
+        //  another way
+
+        for( i in objLast){
+            console.log(i, objLast[i]);
+        }
+
+
+
+    </script>
+</body>
+
+</html>

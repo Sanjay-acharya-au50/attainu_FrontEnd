@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youTube practice</title>
+</head>
+<body>
+    
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height: 400px;
+            width: 600px;
+            background-color: rgb(238, 171, 99);
+            display: flex;
+         justify-content: center;
+         /* flex-direction: row; */
+        }
+        #enter{
+         height: 30px;
+         width: 350px;
+       
+        }
+
+        #cen{
+            margin-top: 30px;
+            font-size: 30px;
+        }
+        #enter{
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        .btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        button{
+            margin-top: 20px;
+            height: 30px;
+            width: 100px;
+        }
+
+    </style>
+
+<div class="container">
+
+    <div id="cen">
+    <label for="enter"> Enter your name to print !<br>
+    <input type="text" id="enter" placeholder="enter here"></label><br>
+    <div class="btn">
+        <button type="button" onclick="myPrint()"> PRINT </button>
+        <p id="para">--</p>
+        <!-- <span> hello span </span> -->
+</div>
+
+
+
+</div>
+
+
+</div>
+
+<script>
+    var name = document.getElementById("enter")[0]
+    var myName = document.getElementById("para")
+    // console.dir(name);
+    var myDiv = document.getElementsByTagName('div')
+    // console.dir(myDiv);
+
+    // var id = document.getElementById("print")
+    // var myname = ""
+
+    function myPrint(){ 
+        // alert(enter.value)
+        myName.innerHTML = "heloo world";
+        // console.log(enter.value);
+    }
+</script>
+
+</body>
+</html>

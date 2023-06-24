@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checked attribute</title>
+</head>
+<body>
+
+    <h3> how to get radio value </h3>
+    <label>select your gender</label>
+    <br>
+    <input type="radio" name="gender" value="hurry!"> hurry!
+    <br>
+    <input type="radio" name="gender" value="yupp!"> yupp!
+    <br>
+    <input type="radio" name="gender" value="congrats!"> congrats!
+    <br>
+    <input type="radio" name="gender" value="awesom!"> awesom!
+    <br>
+
+    <button onclick="getValue()">submit</button>
+    <h3>Result</h3>
+    <p id="output"></p>
+
+
+
+<script>
+
+    function getValue(){
+        // var data = document.getElementsByName('gender');
+        var data = document.getElementsByName("gender");
+
+        var i;
+        for(i = 0; i<data.length; i++){
+            if(data[i].checked){
+                // document.getElementById('output').innerHTML = data[i].value;
+                alert(data[i].value);
+                // console.log(data[i].value);
+            }
+        }
+    }
+
+
+
+    console.log('hello world');
+
+</script>
+
+ <!-- <script>
+    function getValue(){
+    var data = document.getElementsByName("gender");
+    var i;
+    for(i=0; i<=data.length; i++){
+        if(data[i].checked){
+            document.getElementById("output").innerHTML=data[i].value;
+    }
+    }
+    }
+    </script>
+    <h3><span id="How_to_get_the_Value_of_Radio_Button"> How to get the Value of Radio Button</span></h3>
+    <label>Select your Gender</label>
+    <br>
+    <input type="radio" name="gender" value="Male">Male
+    <br>
+    <input type="radio" name="gender" value="Female">Female
+    <br>
+    <button onclick="getValue()">Submit</button>
+    <h4><span id="Result">Result</span></h4>
+    <p id="output"></p>
+ -->
+
+
+</body>
+</html>

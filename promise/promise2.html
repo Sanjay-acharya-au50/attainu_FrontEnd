@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promise 2</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        async function san(){
+            let myP1 = new Promise((resolve,reject) =>{
+                setTimeout(()=>{
+                    resolve(true)
+            console.log('1s working')
+                },2000)
+          
+        })
+
+        let myP2 = new Promise((resolve,reject) =>{
+            setTimeout(()=>{    
+                resolve('2s w')
+            console.log('working')},1000)
+        
+        })
+        await myP1;
+        await myP2;
+
+        }
+        san();
+
+        console.log("hello world!");
+
+
+async function foo(){
+    return 46;
+};
+foo().then((data)=>console.log(data));
+
+async function foo1(){
+    return Promise.resolve(93);
+}
+foo1().then((val)=>console.log(val))
+        
+
+
+    </script>
+</body>
+</html>

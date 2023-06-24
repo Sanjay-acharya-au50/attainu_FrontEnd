@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+
+.container{
+    border: 3px solid black;
+    height: 800px;
+    width: 800px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+
+}
+
+.white{
+
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    flex-basis: 12.5%;
+
+}
+
+.black{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    flex-basis: 12.5%;
+
+}

@@ -1,0 +1,28 @@
+/* div {
+    border: 10px solid black;
+    margin: 100px;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    background-color: blue;
+    text-align: center;
+    width: 500px;
+    height: 1000px;
+    display: block;
+} */
+
+#spn {
+    background-color: blue;
+    border: 5px solid red;
+    margin: 20px;
+    margin-left: 25px;
+    margin-right: 30px;
+    padding: 150px;
+}
+#san {
+    border: 20px solid black;
+    padding: 10px ;
+
+}
+ 

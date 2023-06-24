@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>get and set method</title>
+</head>
+<body>
+    <script>
+
+        class Student {
+            constructor(name,age) {
+                this.name = name;
+                this.age = age;         
+            }
+
+            get studentName (){
+                return this.name;
+            }
+            set studentName (data){
+
+                this.name = data;
+
+            }
+            set studentAge (val){
+
+                this.age = val;
+
+            }
+
+            get studentAge (){
+                return this.age;
+            }
+        }
+        let st1 = new Student("san")
+
+        console.log(st1);
+        st1.studentName = "man" // changing the name 
+        console.log(st1.studentName);  // using get method to accesing the name;
+        st1.studentAge = 23;   // addin the value to set method
+        console.log(st1);
+        
+        console.log(st1.age);   // using get method to accesing the name;
+
+
+    </script>
+</body>
+</html>

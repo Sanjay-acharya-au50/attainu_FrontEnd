@@ -1,0 +1,25 @@
+.div{
+    background-color: lavender;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 40px;
+    height: 500px;
+    border: lavender;
+    border-radius: 3px;
+
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20PX;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#add_btn{
+    margin-top: 20px;
+}

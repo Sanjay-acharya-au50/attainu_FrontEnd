@@ -1,0 +1,27 @@
+/* *{ 
+    background-color: orange
+} */
+body {
+    background-image: url(/Users/apple/Desktop/san/HTML/KTM-RC390.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+h1 {
+    color: white;
+    color: blue;
+    font-family: cursive;
+}
+#myId {
+    background-color: azure; width: 250px; height: 250px;
+}
+.myClass {
+    color: rebeccapurple;
+}
+/* .mult {
+    background-color: green;
+} */
+.sx {
+    background-color: pink;
+}

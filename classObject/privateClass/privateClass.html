@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>private class</title>
+</head>
+<body>
+    
+    <script>
+        // private properties
+        //  symbol
+        // let _length = Symbol(); // not important
+        let _length = new WeakMap();
+
+        class Sqaure {
+            constructor(length){
+                // this._length = length; // symbol is not important
+                _length.set(this,length);
+            }
+            getLength(){
+                console.log(_length.get(this));
+            }
+        }
+        let sq = new Sqaure(1);
+        sq.getLength();
+        // we r not giving the acces to see the property to the user,
+        //  so i created the method so tht user can use this method to see the value
+    </script>
+
+
+</body>
+</html>

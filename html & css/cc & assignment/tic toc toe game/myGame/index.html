@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic tack toe game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+<nav>
+    <ul>
+        <li> myTicTackToe Game</li>
+    </ul>
+</nav>
+
+    <div class="gameContainer">
+        <div class="container">
+            <div class="box"><span class="boxtext"></span></div>
+            <div class="box"><span class="boxtext"></span></div>
+            <div class="box"><span class="boxtext"></span></div>
+            <div class="box"><span class="boxtext"></span></div>
+            <div class="box"><span class="boxtext"></span></div>
+            <div class="box"><span class="boxtext"></span></div>
+            <div class="box"><span class="boxtext"></span></div>
+            <div class="box"><span class="boxtext"></span></div>
+            <div class="box"><span class="boxtext"></span></div>
+        </div>
+        <div class="gameInfo">
+            <h1> wellcome to tic tak toe game</h1>
+            <div>
+                <span class="info">turn for X</span>
+                <button id="reset">reset</button>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+console.log("wellcome to tic tak toe");
+let turn = "X"
+let isgameover = false;
+
+
+
+// function to change turn
+const changeTurn = ()=>{
+    return turn === "X"? "0": "X"
+}
+
+//  function to check win
+const checkWin = ()=>{
+
+}
+
+//  game logic
+
+let boxes = document.getElementsByClassName("box");
+Array.from(boxes).forEach(element =>{
+    let boxtext = document.querySelector('.boxtext');
+    element.addEventListener('click', ()=>{
+        if(boxtext.innerText === ''){
+            boxtext.innerText = turn;
+            turn = changeTurn();
+            checkWin();
+            document.getElementsByClassName('info')[0].innerText = "turn for" + turn;
+        }
+    })
+})
+    </script>
+</body>
+</html>
+
+

@@ -1,0 +1,46 @@
+body {
+    margin: 0px;
+}
+
+.container {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+}  
+
+.san {
+    padding: 15px;
+}
+.man1 {
+    background-color: red;
+}
+.man2 {
+    background-color: black;
+}
+.man3 {
+    background-color: blue;
+}
+.man4 {
+    background-color: orange;
+}
+.man5 {
+    background-color: green;
+}
+.man6 {
+    background-color: yellow;
+}
+.man7 {
+    background-color: pink;
+}
+.man8 {
+    background-color: purple;
+}
+.man9 {
+    background-color: lightblue;
+}
+
+.black {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+}

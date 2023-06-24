@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dev</title>
+    <a href=""></a>
+</head>
+<body>
+    <h1> difference between .innerHTML & .innerTexts</h1>
+    <button type="button" id="btn"> click me </button>
+    <p id="para"></p>
+    <script>
+
+        var myBtn = document.getElementById("btn")
+        var myPara = document.getElementById("para")
+
+        // btn.addEventListener("click", ()=>{
+        // myPara.innerText = "hello";
+        // })
+        btn.addEventListener("click", ()=>{
+            // myPara.innerHTML = "<a href='#'> san </a>"
+            myPara.innerText = "<a href='#'> san </a>"
+    })
+
+    </script>
+</body>
+</html>

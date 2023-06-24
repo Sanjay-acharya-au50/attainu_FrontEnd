@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+}
+nav {
+    /* background-color: red; */
+    height: 400px;
+    /* background-image: url(./pexels-photo-1767434.webp); */
+    /* background-repeat: no-repeat; */
+    background-color: orange;
+    background-size:1500px 600px;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.logo {
+    margin-left: 20px;
+    margin-top: 5px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.adjust{
+margin: 20px;
+}
+.content {
+    height: 300px;
+    width: 700px;
+    /* border: 2px solid blue;
+    border-radius: 5px; */
+    margin-left: 400px;
+    margin-right: 400px;
+}
+.heading{
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-direction: column;
+    justify-content:flex-start;
+    text-align: center;
+    color: white;
+}
+#head{
+    font-size: 35px;
+}
+.email {
+    background-color: red;
+    height: 50px;
+    width: 50px;
+}
+.in{
+    height: 30px;
+}
+.main{
+    display: flex;
+}
+.box{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 15px;
+    height: 300px;
+    width: 800px;
+    background-color: red;
+}
+.box2{
+    padding: 10px;
+    margin: 15px;
+    height: 300px;
+    width: 600px;
+    background-color: black;
+}

@@ -1,0 +1,20 @@
+body{
+    margin: 0px;    
+}
+.san{
+    margin: 70px;
+    height: 150px;
+    width: 150px;
+    background-color: rebeccapurple;
+}
+.san:hover{
+    cursor: pointer;
+    background-color: red;
+}
+
+.hard{
+    font-size: 30px;
+}
+.hard li:hover{
+    background-color: blue;
+}

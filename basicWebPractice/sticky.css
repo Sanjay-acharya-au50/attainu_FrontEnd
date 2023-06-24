@@ -1,0 +1,7 @@
+.stic {
+    background-color: red;
+    height: 50px;
+    width:auto;
+    position: sticky;
+    top: 0px;
+}

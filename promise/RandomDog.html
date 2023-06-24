@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random dog</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div>
+            <img id="imageBox" src="data.image" alt="">
+        </div>
+        <button type="button" onclick="myLoading()">click</button>
+    </div>
+    <script>
+
+        let loading = false;
+        // import fetch from "node-fetch"
+        let myPromise = fetch("https://dog.ceo/api/breeds/image/random");
+
+        const myId = document.getElementById("imagBox");
+        const btn = document.getElementById('button')
+
+        function myLoading(){
+
+        myPromise.then((data)=>{
+            loading = true;
+            return data.json()})
+            .then((val)=> {
+            loding = false;
+            console.log(val)}
+            )
+            btn.addEventListener("clicked", ()=>{
+                imageBox = imageBox.innerText = data.message;
+        })
+
+
+    }
+
+
+
+
+    </script>
+</body>
+
+</html>

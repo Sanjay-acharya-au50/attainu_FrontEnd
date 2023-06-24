@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main {
+    position: relative;
+    width: 750px;
+    height: 600px;
+    border: 1px solid #dee0e3;
+    border-radius: 7px;
+}
+.right {
+    width: 440px;
+    height: 100%;
+    padding: 40px;
+}
+.right img {
+    width: 80px;
+    margin-bottom: 14px;
+}
+.right .heading {
+    font-size: 24px;
+    letter-spacing: 1px;
+    margin-bottom: 35px;
+}
+.two {
+    margin-bottom: 24px;
+}
+.floating {
+    position: relative;
+}
+.floating input {
+    width: 175px;
+    height: 36px;
+    outline: none;
+    border: 0.4px solid #dee0e3;
+    border-radius: 4px;
+    padding: 0 9px;
+}
+.floating label {
+    position: absolute;
+    top: 2px;
+    left: 9px;
+    letter-spacing: 0.4px;
+    transition: all 0.3s;
+    font-size: 13px;
+    color: grey;
+}
+.floating input:focus {
+    border: 2px solid #1a73e8;
+}
+.floating input:focus ~ label {
+    top: -15px;
+    left: 4px;
+    font-size: 10px;
+    background-color: white;
+    padding: 0 5px;
+}
+.three {
+    margin-bottom: 40px;
+}
+.unique input {
+    width: 355px;
+    padding: 0 9px;
+}
+.unique .inp {
+    position: absolute;
+    right: 16px;
+    top: 2px;
+}
+.sub {
+    margin-top: 5px;
+    margin-left: 9px;
+    font-size: 11px;
+    letter-spacing: 0.4px;
+    color: grey;
+}
+.text {
+    margin-top: 18px;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+    color: #1a73e8;
+}
+.four {
+    margin-bottom: 16px;
+    position: relative;
+}
+.five input {
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 4px solid grey;
+}
+.five input:hover {
+    box-shadow: 0px 0px 27px #1a73e8;
+}
+.five input:checked {
+    box-shadow: 0px 0px 27px #1a73e8;
+}
+.five .show {
+    vertical-align: baseline;
+    margin-left: 36px;
+}
+
+.five {
+    position: relative;
+    margin-bottom: 64px;
+}
+
+.six {
+    position: relative;
+    width: 99%;
+}
+.six .btn {
+    width: 140px;
+    line-height: 36px;
+    background-color: none;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+    color: #1a73e8;
+}
+.six .btn2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 90px;
+    background-color: #1a73e8;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.left {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 310px;
+    height: 100%;
+}
+.left img {
+    position: inherit;
+    top: 116px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+}
+.left p {
+    position: inherit;
+    top: 370px;
+    left: 40px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 20px;
+}

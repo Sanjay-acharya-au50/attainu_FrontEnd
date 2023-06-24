@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>helllo</h1>
+
+    <script>
+
+        // // async and await promisses
+
+        //         async function myFun() {
+        //     let myProm = new Promise((resolve, reject)=>{
+        //         setTimeout(() => {
+        //         resolve('ok its working')
+                    
+        //         }, 710);
+        //     })
+        //     return await myProm;
+        // }
+        // myFun().then((d)=>console.log(d))
+
+
+        // async function fun (){
+        //     let newProm =new Promise((res,rej)=>{
+        //         setTimeout(()=>{
+        //             res('yeah');
+        //         },1000)
+        //     })
+        //     return  await newProm;
+        // }
+        
+        // console.log('holo');
+        // fun().then((v)=>console.log(v))
+
+async function oo (){
+   await console.log('hello world');
+}
+
+async function pp (){
+    return await oo()
+}
+
+console.log('san');
+
+          async function fun (){
+                let prom = new Promise((res,rej)=>{
+                    res('ok')
+                })
+
+                console.log('done');
+                return await prom;
+            }
+            
+            fun().then((v)=>console.log(v))
+            console.log('bro');
+
+            console.log('holllo')
+
+
+
+            //   function myDream(){
+            //     let myD = new Promise((suc,rej)=>{
+            //         setTimeout(() => {
+            //         suc('finally got placed')
+                        
+            //         }, 100);
+            //     })
+            //     return myD;
+            // }
+            // // myDream().then((v)=>console.log(v))
+
+            // async function myLo(){
+            //     let jaz = await myDream()
+            //     console.log(jaz)
+            // }
+            // myLo()
+
+
+
+
+            
+        //     console.log("hello")
+        //     console.log("hello world")
+        //     console.log("hello san")
+        //     function hello (a,b){
+        //         console.log(a+b)
+        //     }
+        //     hello(1,2);
+
+        //    async function foo (){
+        //         console.log("hello world")
+        //         let myPr = await new Promise ((resolve,reject)=>{
+        //             setTimeout(() => {
+        //                 resolve("finally got placed")
+        //             }, 1000);
+        //             console.log("inside await")
+        //         })
+        //         console.log(myPr);
+
+
+        //         console.log("hellow bro!");
+        //         let myPr2 = await new Promise ((suc,rej)=>{
+        //             setTimeout(() => {
+        //                 suc("happy life")
+        //             }, 500);
+        //         })
+        //         console.log(myPr2);
+        //     }
+        //     foo();
+        //     console.log("outside of the function")
+        //     setTimeout(() => {
+        //         console.log("heh man!")
+        //     }, 4000);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This keyword</title>
+</head>
+<body>
+    <script>
+
+        
+        // --------------------------------
+        //  this keyWord in class
+        class Property {
+            constructor(bike){
+                this.bike= bike;
+                this.draw = function (){
+                    console.log(this);
+                }
+            }
+        }
+
+        function myDream (){
+            this.draw = function(){
+                console.log(this);
+            }
+        }
+
+        let myAsst = new Property(3)
+        let newDream = new myDream()
+
+        let dem = myAsst.draw;
+        let dem1 = newDream.draw;
+
+        dem();
+        dem1();
+
+    </script>
+</body>
+</html>
